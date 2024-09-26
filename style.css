@@ -1,0 +1,32 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue
+}
+
+div.largetext {
+    font-size: 200px;
+    line-height: 300px;
+}
+
+div.mediumtext {
+    font-size: 76px;
+    line-height: 99px;
+}
+
+div.smalltext {
+    font-size: 32px;
+    line-height: 50px;
+}
+
+div.pinktext {
+    color:#BA1B6E
+}
+
+div.whittext {
+    color:#FFFFFF
+}
+
+div.bluebg {
+    background-color: blue;
+}
