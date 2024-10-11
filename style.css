@@ -1,32 +1,108 @@
 body {
     background-color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    color:aliceblue
+    font-family:"Anek Malayalam";
+    color:rgb(0, 0, 0);
+    margin: 10px;
+}
+
+/* Typrography */
+
+@font-face {
+    font-family:"Plilowlava-Atome.woff";
+    src: url("font/Pilowlava-Atome.woff");
+}
+
+div.test {
+    font-family:"Plilowlava-Atome.woff";
 }
 
 div.largetext {
-    font-size: 200px;
-    line-height: 300px;
+    font-size: 120px;
+    line-height: 125px;
+}
+
+div.hugetext {
+    font-size: 280px;
+    line-height: 220px;
 }
 
 div.mediumtext {
-    font-size: 76px;
+    font-size: 60px;
     line-height: 99px;
 }
 
 div.smalltext {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 50px;
 }
+
+div.textcenter {
+    text-align:center;
+}
+
+/* Colors */
 
 div.pinktext {
     color:#BA1B6E
 }
 
-div.whittext {
+div.whitetext {
     color:#FFFFFF
 }
 
-div.bluebg {
-    background-color: blue;
+div.redtext {
+    color:#7A4332
+}
+
+div.orbg {
+    background-color:#AB523B;
+}
+
+/* Layout */
+
+div.width25 {
+    width:25%;
+}
+
+div.width50 {
+    width:50%;
+}
+
+div.width75 {
+    width:75%;
+}
+
+div.width100 {
+    width:100%;
+}
+
+div.mb50 {
+    margin-bottom:50px;
+}
+
+div.mb200 {
+    margin-bottom:200px;
+}
+
+div.ml200{
+    margin-left:200px;
+}
+
+div.mlauto {
+    margin-left:auto;
+}
+
+div.mrauto {
+    margin-right:auto;
+}
+
+div.circle {
+    width:500px;
+    height:500px;
+    border-radius:100%;
+}
+
+div.container {
+    display:flex;
+    flex-wrap:wrap;
 }
