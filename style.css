@@ -1,11 +1,32 @@
 body {
-    background-color: #FFFFFF;
-    font-family:"Anek Malayalam";
-    color:rgb(0, 0, 0);
+    background-color: #000000;
+    font-family:"Kanit";
+    color:rgb(255, 255, 255);
     margin: 10px;
 }
 
-/* Typrography */
+/* Font */
+@font-face {
+    font-family:"Kanit";
+    src: url("font/Kanit-Regular.woff");
+}
+
+@font-face {
+    font-family:"Kanit-Medium";
+    src: url("font/Kanit-Medium.woff") format("woff");
+}
+
+div.kmtext {
+    font-family:"Kanit-Medium";
+}
+@font-face {
+    font-family: 'Unlock';
+    src: url('fonts/Unlock-Regular.woff');
+}
+
+div.untext {
+    font-family:"Unlock",sans-serif;
+}
 
 @font-face {
     font-family:"Plilowlava-Atome.woff";
@@ -16,14 +37,61 @@ div.test {
     font-family:"Plilowlava-Atome.woff";
 }
 
+@font-face {
+    font-family:"Orbitron";
+    src: url("font/Orbitron-VariableFont_wght.woff") format("woff");
+}
+
+div.obtext {
+    font-family:"Orbitron";
+}
+
+@font-face {
+    font-family:"Orbitron2";
+    src: url("font/Orbitron.woff") format("woff");
+}
+
+div.ob2text {
+    font-family:"Orbitron2";
+}
+
+@font-face {
+    font-family:"Silkscreen";
+    src: url("font/Silkscreen-Bold.woff") format("woff");
+}
+
+div.ldtext {
+    font-family:"Silkscreen";
+}
+
+@font-face {
+    font-family:"ZhiMangXing";
+    src: url("font/ZhiMangXing-Regular.woff") format("woff");
+}
+
+div.hztext {
+    font-family:"ZhiMangXing";
+}
+
+@font-face {
+    font-family:"RubikGlitch";
+    src: url("font/RubikGlitch-Regular.woff") format("woff");
+}
+
+div.cbtext {
+    font-family:"RubikGlitch";
+}
+
+/* Typrography */
+
 div.largetext {
-    font-size: 120px;
-    line-height: 125px;
+    font-size: 100px;
+    line-height: 100px;
 }
 
 div.hugetext {
-    font-size: 280px;
-    line-height: 220px;
+    font-size: 200px;
+    line-height: 180px;
 }
 
 div.mediumtext {
@@ -32,60 +100,109 @@ div.mediumtext {
 }
 
 div.smalltext {
-    font-size: 40px;
+    font-size: 48px;
     line-height: 50px;
+}
+
+div.small2text {
+    font-size: 32px;
+    line-height: 36px;
+}
+
+div.tinytext {
+    font-size: 24px;
+    line-height: 30px;
 }
 
 div.textcenter {
     text-align:center;
+    justify-content: center;
 }
 
 /* Colors */
 
 div.pinktext {
-    color:#BA1B6E
+    color:#ff0084
 }
 
-div.whitetext {
-    color:#FFFFFF
+div.blacktext {
+    color:#000000
 }
 
-div.redtext {
-    color:#7A4332
+div.greentext {
+    color:#05F4F1
 }
 
-div.orbg {
-    background-color:#AB523B;
+div.dgreentext {
+    color:#00FF2F
+}
+
+div.whbg {
+    background-color: #FFFFFF;
 }
 
 /* Layout */
 
-div.width25 {
-    width:25%;
+div.width16.6 {
+    width:16.6%;
+}
+
+div.width33 {
+    width:33.3%;
 }
 
 div.width50 {
     width:50%;
 }
 
-div.width75 {
-    width:75%;
+div.width66 {
+    width:66.6%;
+}
+
+div.width83 {
+    width:83%;
 }
 
 div.width100 {
     width:100%;
 }
 
-div.mb50 {
-    margin-bottom:50px;
+/* Margin */
+
+div.mt111 {
+    margin-top:111px;
+}
+
+div.mt180 {
+    margin-top:180px;
+}
+
+div.mb30 {
+    margin-bottom:500px;
+}
+
+div.mb30 {
+    margin-bottom:30px
+}
+
+div.mb150 {
+    margin-bottom:150px
 }
 
 div.mb200 {
     margin-bottom:200px;
 }
 
+div.mb500 {
+    margin-bottom:500px;
+}
+
 div.ml200{
     margin-left:200px;
+}
+
+div.ml100 {
+    margin-left:100px:
 }
 
 div.mlauto {
@@ -105,4 +222,234 @@ div.circle {
 div.container {
     display:flex;
     flex-wrap:wrap;
+}
+
+div.container {
+    position: relative; 
+}
+
+div.toptext {
+    position: relative; 
+    z-index: 2; 
+}
+
+/* Image */
+
+div.jbsquare {
+    width: 1728px; 
+    height: 1117px; 
+    background: linear-gradient(0deg, #000000 20%, #FF00C5 64%);
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    z-index: 1;
+}
+
+div.mbsquare {
+    width: 1618px;   
+    height: 873px; 
+    background-color: transparent; 
+    border: 2px solid #05F4F1; 
+}
+
+div.wtextsquare {
+    width: 300px;   
+    height: 150px; 
+    background-color: transparent; 
+    border: 2px solid #05F4F1; 
+}
+
+div.nav {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
+
+.jumping-text {
+    display: inline-flex; /* 使字母在同一行 */
+}
+
+/* Motion */
+/* 外层容器充满屏幕并居中对齐 */
+.containercenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;  /* 全屏高度 */
+}
+
+div.jumping-text {
+    display: inline-flex; /* 使字母在同一行 */
+}
+
+div.jumping-text span {
+    display: inline-block;
+    animation: jump 1s ease-in-out infinite;
+}
+
+.jumping-text span:nth-child(1) { animation-delay: 0s; }
+.jumping-text span:nth-child(2) { animation-delay: 0.1s; }
+.jumping-text span:nth-child(3) { animation-delay: 0.2s; }
+.jumping-text span:nth-child(4) { animation-delay: 0.3s; }
+.jumping-text span:nth-child(5) { animation-delay: 0.4s; }
+.jumping-text span:nth-child(6) { animation-delay: 0.5s; }
+.jumping-text span:nth-child(7) { animation-delay: 0.6s; }
+.jumping-text span:nth-child(8) { animation-delay: 0.7s; }
+.jumping-text span:nth-child(9) { animation-delay: 0.8s; }
+.jumping-text span:nth-child(10) { animation-delay: 0.9s; }
+.jumping-text span:nth-child(11) { animation-delay: 1.0s; }
+.jumping-text span:nth-child(12) { animation-delay: 1.1s; }
+.jumping-text span:nth-child(13) { animation-delay: 1.2s; }
+.jumping-text span:nth-child(14) { animation-delay: 1.3s; }
+.jumping-text span:nth-child(15) { animation-delay: 1.4s; }
+.jumping-text span:nth-child(16) { animation-delay: 1.5s; }
+.jumping-text span:nth-child(17) { animation-delay: 1.6s; }
+.jumping-text span:nth-child(18) { animation-delay: 1.7s; }
+.jumping-text span:nth-child(19) { animation-delay: 1.8s; }
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0); } /* 起始和结束状态，保持在水平线上 */
+    50% { transform: translateY(-20px); } /* 中间状态，向上跳 */
+}
+
+/* 外部容器，定义长方形区域 */
+.scroll-container {
+    width: 100vw;            /* 与屏幕同宽 */
+    height: 50px;            /* 设置容器高度 */
+    overflow: hidden;        /* 隐藏超出容器的内容 */
+    background-color: #f0f0f0; /* 背景颜色 */
+    display: flex;
+    align-items: center;
+}
+
+/* 滚动的文字样式 */
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;         
+    animation: scroll 10s linear infinite; /* 设置动画 */
+}
+
+/* 定义滚动动画 */
+@keyframes scroll {
+    from {
+        transform: translateX(100%); /* 从容器右侧开始 */
+    }
+    to {
+        transform: translateX(-100%); /* 向左滚动直到不可见 */
+    }
+}
+
+/* image */
+
+img.resize-image {
+    width: 1728px;   /* 高度将自动按比例缩放 */
+    max-width: 100%;   /* 图片最大宽度为容器宽度 */
+    height: auto;
+}
+
+.border-box {
+    width: 80%;                 /* 调整框的宽度 */
+    margin: 20px auto;          /* 居中对齐并增加外边距 */
+    padding: 20px;              /* 内边距使文字不紧贴边框 */
+    border: 2px solid #05F4F1;     /* 设置边框颜色和粗细 */
+    box-sizing: border-box;     /* 确保 padding 不影响宽度 */
+    color: #ffffff;                /* 文字颜色 */
+    font-size: 24px;            /* 调整文字大小 */
+    line-height: 1.6;           /* 增加行距，提升可读性 */
+    text-align: left;           /* 左对齐文字 */
+}
+
+.bordered-image {
+    border: 3px solid #ffffff;  /* 边框颜色和宽度 */
+    border-radius: 8px;      /* 可选：圆角边框 */
+    padding: 5px;            /* 可选：内边距让边框看起来更宽 */
+}
+
+/* Flex container to make image and text each take half the screen */
+.container2 {
+    display: flex;
+    width: 100%;                 /* Full width of the screen */
+    max-width: 100vw;            /* Constrain to viewport width */
+    gap: 20px;                   /* Space between image and text */
+}
+
+/* Image styles */
+.bordered-image {
+    width: 50%;                  /* Take half the width */
+    border: 2px solid #ffffff;      /* Optional border */
+    border-radius: 8px;          /* Rounded corners if desired */
+    height: auto;                /* Maintain aspect ratio */
+}
+
+/* Text content styles */
+.text-content {
+    width: 50%;                  /* Take half the width */
+    font-size: 24px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.image-container {
+    display: flex;               /* 使用 flex 布局 */
+    gap: 20px;                   /* 图片之间的间距 */
+    justify-content: center;     /* 水平居中整个图片容器 */
+}
+
+.image-container img {
+    width: 400px;                /* 设置图片宽度 */
+    height: auto;                /* 保持图片比例 */
+    border-radius: 5px;          /* 可选：添加圆角 */
+    border: 2px solid #05F4F1;      /* 可选：添加边框 */
+}
+
+.button-container {
+    display: flex;                 /* 使用 Flexbox 布局 */
+    justify-content: center;       /* 水平居中 */
+}
+
+.send-button {
+    padding: 10px 20px;           /* 内边距 */
+    font-size: 48px;
+    font-family: "Silkscreen";           /* 字体大小 */
+    color: #ffffff;               /* 字体颜色 */
+    background-color: #05F4F1;    /* 按钮背景颜色 */
+    border: none;                 /* 去除边框 */
+    border-radius: 10px;           /* 圆角 */
+    cursor: pointer;              /* 鼠标悬停时变成手指图标 */
+    transition: background-color 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 鼠标悬停时的效果 */
+.send-button:hover {
+    background-color: #07cbc7;    /* 鼠标悬停时背景颜色变暗 */
+}
+
+.text-container {
+    width: 80%;                /* 设置宽度为 66% */
+    margin: 0 auto;            /* 将容器水平居中 */
+    text-align: center;        /* 让文本在容器内水平居中 */
+    padding: 10px;             /* 添加内边距 */
+    box-sizing: border-box;    /* 确保 padding 不影响 width */
+}
+
+.container {
+    display: flex;                  /* 使用 Flex 布局 */
+    align-items: flex-start;        /* 顶部对齐 */
+    gap: 20px;                      /* 图片和文字间距 */
+    padding: 0 50px;                /* 左右内边距，使内容远离屏幕两边 */
+}
+
+.side-image {
+    width: 50%;                     /* 图片宽度占 50% */
+    max-width: 300px;               /* 设置最大宽度 */
+    height: auto;                   /* 保持图片的比例 */
+}
+
+.smalltext {
+    flex: 1;                        /* 让文字占满剩余空间 */
+    text-align: left;               /* 确保文字左对齐 */
+    border: 2px solid #ccc;         /* 文字块边框 */
+    padding: 10px;                  /* 文字边框内填充 */
+    background-color: #f9f9f9;      /* 文字块背景颜色 */
+}
 }
