@@ -122,7 +122,7 @@ div.textcenter {
 /* Colors */
 
 div.pinktext {
-    color:#ff0084
+    color:#FF00C5
 }
 
 div.blacktext {
@@ -173,16 +173,20 @@ div.mt111 {
     margin-top:111px;
 }
 
-div.mt180 {
-    margin-top:180px;
+div.mt350 {
+    margin-top:350px;
 }
 
-div.mb30 {
-    margin-bottom:500px;
+div.mb50 {
+    margin-bottom:50px;
 }
 
 div.mb30 {
     margin-bottom:30px
+}
+
+div.mb100 {
+    margin-bottom:100px
 }
 
 div.mb150 {
@@ -402,6 +406,8 @@ img.resize-image {
     border: 2px solid #05F4F1;      /* 可选：添加边框 */
 }
 
+/* button */
+
 .button-container {
     display: flex;                 /* 使用 Flexbox 布局 */
     justify-content: center;       /* 水平居中 */
@@ -412,16 +418,15 @@ img.resize-image {
     font-size: 48px;
     font-family: "Silkscreen";           /* 字体大小 */
     color: #ffffff;               /* 字体颜色 */
-    background-color: #05F4F1;    /* 按钮背景颜色 */
+    background-color: #FF00C5;    /* 按钮背景颜色 */
     border: none;                 /* 去除边框 */
     border-radius: 10px;           /* 圆角 */
     cursor: pointer;              /* 鼠标悬停时变成手指图标 */
     transition: background-color 0.3s ease; /* 平滑过渡效果 */
 }
 
-/* 鼠标悬停时的效果 */
 .send-button:hover {
-    background-color: #07cbc7;    /* 鼠标悬停时背景颜色变暗 */
+    background-color: #d30da5;    /* 鼠标悬停时背景颜色变暗 */
 }
 
 .text-container {
@@ -432,24 +437,61 @@ img.resize-image {
     box-sizing: border-box;    /* 确保 padding 不影响 width */
 }
 
-.container {
-    display: flex;                  /* 使用 Flex 布局 */
-    align-items: flex-start;        /* 顶部对齐 */
-    gap: 20px;                      /* 图片和文字间距 */
-    padding: 0 50px;                /* 左右内边距，使内容远离屏幕两边 */
+
+.horizontal-line {
+    width: 100%;              /* 线的宽度 */
+    height: 15px;              /* 线的高度 */
+    background-color: #05F4F1;   /* 线的颜色 */
+    margin: 30px 0 50px 0;     /* 分别设置上、右、下、左的边距 */
 }
 
-.side-image {
-    width: 50%;                     /* 图片宽度占 50% */
-    max-width: 300px;               /* 设置最大宽度 */
-    height: auto;                   /* 保持图片的比例 */
+.containertuwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 5%; /* 控制与屏幕两侧的距离 */
 }
 
-.smalltext {
-    flex: 1;                        /* 让文字占满剩余空间 */
-    text-align: left;               /* 确保文字左对齐 */
-    border: 2px solid #ccc;         /* 文字块边框 */
-    padding: 10px;                  /* 文字边框内填充 */
-    background-color: #f9f9f9;      /* 文字块背景颜色 */
+.image-half {
+    width: 45%; /* 图片宽度设为50%以下来留出间距 */
+    max-width: 600px;
+    margin-left: 20px;
+    border: 6px solid #ffffff; /* 设置边框的宽度和颜色 */
+    border-radius: 8px; /* 如果需要圆角，可以增加这一行 */
 }
+
+
+.text-half {
+    width: 45%; /* 文字宽度设为50%以下来留出间距 */
+    border-bottom: 5px solid #ffffff; /* 底部边框，颜色可按需求调整 */
+    padding-bottom: 10px; /* 文字底部留空 */
+}
+
+/* Center the text box */
+.text-box {
+    width: 50%;
+    margin: 0 auto; /* Center the box */
+    padding: 20px;
+    border: 4px solid #05F4F1; /* Border around the box */
+    text-align: left; /* Left-align the text */
+    background-color: #f8f8f8; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the box */
+}
+
+/* Style the button and center it */
+.print-button {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 20px 40px;
+    font-size: 36px;
+    background-color: #FF00C5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:"Kanit-Medium";
+}
+
+.print-button:hover {
+    background-color: #d30da5;
 }
